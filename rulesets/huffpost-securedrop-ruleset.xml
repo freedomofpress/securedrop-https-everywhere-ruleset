@@ -1,0 +1,5 @@
+<ruleset name="HuffPost">
+	<target host="^img.huffingtonpost.com.securedrop.onion" />
+	<rule from="^https://img\.huffingtonpost\.com\.securedrop\.onion"
+        to="http://rbugf2rz5lmjbfun.onion" />
+</ruleset>

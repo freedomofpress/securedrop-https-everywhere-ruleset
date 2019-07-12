@@ -1,0 +1,5 @@
+<ruleset name="Public Intelligence">
+	<target host="^publicintelligence.net.securedrop.onion" />
+	<rule from="^https://publicintelligence\.net\.securedrop\.onion"
+        to="http://arujlhu2zjjhc3bw.onion" />
+</ruleset>

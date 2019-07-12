@@ -1,0 +1,5 @@
+<ruleset name="Field of Vision">
+	<target host="^fieldofvision.org.securedrop.onion" />
+	<rule from="^https://fieldofvision\.org\.securedrop\.onion"
+        to="http://fovisionunz7mtxw.onion" />
+</ruleset>

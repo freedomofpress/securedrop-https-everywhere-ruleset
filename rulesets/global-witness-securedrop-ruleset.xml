@@ -1,0 +1,5 @@
+<ruleset name="Global Witness">
+	<target host="^www.globalwitness.org.securedrop.onion" />
+	<rule from="^https://www\.globalwitness\.org\.securedrop\.onion"
+        to="http://37fmdxug33hhyi2g.onion" />
+</ruleset>

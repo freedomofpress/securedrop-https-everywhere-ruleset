@@ -1,0 +1,5 @@
+<ruleset name="The Intercept">
+	<target host="^theintercept.com.securedrop.onion" />
+	<rule from="^https://theintercept\.com\.securedrop\.onion"
+        to="http://intrcept32ncblef.onion" />
+</ruleset>

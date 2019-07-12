@@ -1,0 +1,5 @@
+<ruleset name="Bloomberg News">
+	<target host="^www.bloomberg.com.securedrop.onion" />
+	<rule from="^https://www\.bloomberg\.com\.securedrop\.onion"
+        to="http://m4hynbhhctdk27jr.onion" />
+</ruleset>

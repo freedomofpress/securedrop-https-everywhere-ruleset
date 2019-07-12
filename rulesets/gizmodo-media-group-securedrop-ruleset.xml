@@ -1,0 +1,5 @@
+<ruleset name="Gizmodo Media Group">
+	<target host="^specialprojectsdesk.com.securedrop.onion" />
+	<rule from="^https://specialprojectsdesk\.com\.securedrop\.onion"
+        to="http://gmg7jl25ony5g7ws.onion" />
+</ruleset>

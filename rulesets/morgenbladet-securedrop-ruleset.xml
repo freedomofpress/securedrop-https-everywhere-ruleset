@@ -1,0 +1,5 @@
+<ruleset name="Morgenbladet">
+	<target host="^morgenbladet.no.securedrop.onion" />
+	<rule from="^https://morgenbladet\.no\.securedrop\.onion"
+        to="http://g4wmrmqxpj5bnvml.onion" />
+</ruleset>

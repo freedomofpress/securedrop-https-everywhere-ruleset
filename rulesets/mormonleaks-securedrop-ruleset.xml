@@ -1,0 +1,5 @@
+<ruleset name="MormonLeaks">
+	<target host="^mormonleaks.io.securedrop.onion" />
+	<rule from="^https://mormonleaks\.io\.securedrop\.onion"
+        to="http://efeip5ekoqi4upkz.onion" />
+</ruleset>

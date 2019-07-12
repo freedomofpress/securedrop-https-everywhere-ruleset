@@ -1,0 +1,5 @@
+<ruleset name="Apache">
+	<target host="^www.apache.be.securedrop.onion" />
+	<rule from="^https://www\.apache\.be\.securedrop\.onion"
+        to="http://zdf4nikyuswdzbt6.onion" />
+</ruleset>

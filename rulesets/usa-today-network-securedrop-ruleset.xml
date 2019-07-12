@@ -1,0 +1,5 @@
+<ruleset name="USA TODAY Network">
+	<target host="^www.usatoday.com.securedrop.onion" />
+	<rule from="^https://www\.usatoday\.com\.securedrop\.onion"
+        to="http://usatodayw7vu5egc.onion" />
+</ruleset>

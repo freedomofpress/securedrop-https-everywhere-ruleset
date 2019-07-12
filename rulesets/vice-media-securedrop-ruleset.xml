@@ -1,0 +1,5 @@
+<ruleset name="VICE Media">
+	<target host="^news.vice.com.securedrop.onion" />
+	<rule from="^https://news\.vice\.com\.securedrop\.onion"
+        to="http://e3v3x57ykz25uvij.onion" />
+</ruleset>
