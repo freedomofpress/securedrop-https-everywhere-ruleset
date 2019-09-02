@@ -1,3 +1,7 @@
+# Don't commit keys
+*.pem
+*.jwk
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
