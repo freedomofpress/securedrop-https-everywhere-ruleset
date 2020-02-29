@@ -46,10 +46,6 @@ python jwk.py > key.jwk
 
 ## Updating the channel
 
-If you've updated the rules, resign them (described in HTTPS everywhere docs), and then place the files to serve in `channel/`, then run the following to update the directory listing:
+If you've updated the rules, resign them (described in HTTPS everywhere docs), and then place the files to serve in the root of the git tree, then update the directory listing in `index.html`.
 
-```
-python update_index.py
-```
-
-Commit the resulting `index.html` and all files in `channel/`
+Commit the resulting `index.html` and all files to be served.
