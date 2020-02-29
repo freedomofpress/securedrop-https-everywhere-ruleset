@@ -1,0 +1,5 @@
+<ruleset name="Forbes">
+	<target host="www.forbes.com.securedrop.tor.onion" />
+	<rule from="^http[s]?://www.forbes.com.securedrop.tor.onion"
+        to="http://t5pv5o4t6jyjilp6.onion" />
+</ruleset>

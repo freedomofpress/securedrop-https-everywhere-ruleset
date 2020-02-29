@@ -1,5 +1,5 @@
 <ruleset name="FaithLeaks">
-	<target host="^faithleaks.org.securedrop.onion" />
-	<rule from="^https://faithleaks\.org\.securedrop\.onion"
+	<target host="faithleaks.org.securedrop.tor.onion" />
+	<rule from="^http[s]?://faithleaks.org.securedrop.tor.onion"
         to="http://efeip5ekoqi4upkz.onion" />
 </ruleset>

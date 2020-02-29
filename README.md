@@ -4,8 +4,17 @@
 
 ## Generate SecureDrop rulesets
 
+setup:
+
 ```
+virtualenv --python=python3 .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+```
+
+generate rulesets from securedrop directory:
+
+```
 python sddir.py
 ```
 
@@ -37,7 +46,7 @@ python jwk.py > key.jwk
 
 ## Updating the channel
 
-If you've updated the rules, resign them and then place the files to serve in `channel/`, then run the following to update the directory listing:
+If you've updated the rules, resign them (described in HTTPS everywhere docs), and then place the files to serve in `channel/`, then run the following to update the directory listing:
 
 ```
 python update_index.py

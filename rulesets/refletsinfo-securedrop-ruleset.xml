@@ -1,5 +1,5 @@
 <ruleset name="Reflets.info">
-	<target host="^reflets.info.securedrop.onion" />
-	<rule from="^https://reflets\.info\.securedrop\.onion"
+	<target host="reflets.info.securedrop.tor.onion" />
+	<rule from="^http[s]?://reflets.info.securedrop.tor.onion"
         to="http://ehcxwl4f62lkek65.onion" />
 </ruleset>

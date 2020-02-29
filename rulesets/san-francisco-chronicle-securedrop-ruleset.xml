@@ -1,5 +1,5 @@
 <ruleset name="San Francisco Chronicle">
-	<target host="^projects.sfchronicle.com.securedrop.onion" />
-	<rule from="^https://projects\.sfchronicle\.com\.securedrop\.onion"
+	<target host="projects.sfchronicle.com.securedrop.tor.onion" />
+	<rule from="^http[s]?://projects.sfchronicle.com.securedrop.tor.onion"
         to="http://nrwvazcz6figxpg5.onion" />
 </ruleset>

@@ -1,5 +1,0 @@
-<ruleset name="Süddeutsche Zeitung">
-	<target host="^www.sueddeutsche.de.securedrop.onion" />
-	<rule from="^https://www\.sueddeutsche\.de\.securedrop\.onion"
-        to="http://rx4g2bilxipcryde.onion" />
-</ruleset>

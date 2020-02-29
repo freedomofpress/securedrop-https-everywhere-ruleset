@@ -1,5 +1,5 @@
 <ruleset name="New York Times">
-	<target host="^www.nytimes.com.securedrop.onion" />
-	<rule from="^https://www\.nytimes\.com\.securedrop\.onion"
+	<target host="www.nytimes.com.securedrop.tor.onion" />
+	<rule from="^http[s]?://www.nytimes.com.securedrop.tor.onion"
         to="http://nyttips4bmquxfzw.onion" />
 </ruleset>

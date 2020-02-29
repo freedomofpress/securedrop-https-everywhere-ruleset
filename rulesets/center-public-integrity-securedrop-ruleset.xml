@@ -1,0 +1,5 @@
+<ruleset name="The Center for Public Integrity">
+	<target host="apps.publicintegrity.org.securedrop.tor.onion" />
+	<rule from="^http[s]?://apps.publicintegrity.org.securedrop.tor.onion"
+        to="http://ahgpmkiaqfde4innkotgz5q6bgt4gbxmelqod3tjtmpdt3zvxaxareyd.onion" />
+</ruleset>

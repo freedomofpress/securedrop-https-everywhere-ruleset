@@ -1,5 +1,5 @@
 <ruleset name="The Globe and Mail">
-	<target host="^sec.theglobeandmail.com.securedrop.onion" />
-	<rule from="^https://sec\.theglobeandmail\.com\.securedrop\.onion"
+	<target host="sec.theglobeandmail.com.securedrop.tor.onion" />
+	<rule from="^http[s]?://sec.theglobeandmail.com.securedrop.tor.onion"
         to="http://sml5wmpuq7ifq2mh.onion" />
 </ruleset>

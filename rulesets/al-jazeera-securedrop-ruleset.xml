@@ -1,5 +1,5 @@
 <ruleset name="Al Jazeera Media Network">
-	<target host="^www.aljazeera.com.securedrop.onion" />
-	<rule from="^https://www\.aljazeera\.com\.securedrop\.onion"
+	<target host="www.aljazeera.com.securedrop.tor.onion" />
+	<rule from="^http[s]?://www.aljazeera.com.securedrop.tor.onion"
         to="http://aljazeerafo4sau2.onion" />
 </ruleset>

@@ -1,5 +1,5 @@
 <ruleset name="Coworker.org">
-	<target host="^home.coworker.org.securedrop.onion" />
-	<rule from="^https://home\.coworker\.org\.securedrop\.onion"
+	<target host="home.coworker.org.securedrop.tor.onion" />
+	<rule from="^http[s]?://home.coworker.org.securedrop.tor.onion"
         to="http://no4gurk7efg4abwv.onion" />
 </ruleset>

@@ -1,5 +1,5 @@
 <ruleset name="BuzzFeed">
-	<target host="^www.buzzfeednews.com.securedrop.onion" />
-	<rule from="^https://www\.buzzfeednews\.com\.securedrop\.onion"
+	<target host="www.buzzfeednews.com.securedrop.tor.onion" />
+	<rule from="^http[s]?://www.buzzfeednews.com.securedrop.tor.onion"
         to="http://ndg43ilvrrj465ix.onion" />
 </ruleset>

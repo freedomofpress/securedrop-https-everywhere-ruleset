@@ -1,5 +1,5 @@
 <ruleset name="Barton Gellman">
-	<target host="^tcfmailvault.info.securedrop.onion" />
-	<rule from="^https://tcfmailvault\.info\.securedrop\.onion"
+	<target host="tcfmailvault.info.securedrop.tor.onion" />
+	<rule from="^http[s]?://tcfmailvault.info.securedrop.tor.onion"
         to="http://mqddpn6yt4f5uqei.onion" />
 </ruleset>

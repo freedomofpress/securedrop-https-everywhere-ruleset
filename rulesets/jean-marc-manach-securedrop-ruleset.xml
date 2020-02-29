@@ -1,5 +1,5 @@
 <ruleset name="Jean-Marc Manach">
-	<target host="^jean-marc.manach.net.securedrop.onion" />
-	<rule from="^https://jean-marc\.manach\.net\.securedrop\.onion"
+	<target host="jean-marc.manach.net.securedrop.tor.onion" />
+	<rule from="^http[s]?://jean-marc.manach.net.securedrop.tor.onion"
         to="http://32qfx2skzcifeyg7.onion" />
 </ruleset>
