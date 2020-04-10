@@ -1,10 +1,8 @@
 # HTTPS-Everywhere Rulesets for SecureDrop
 
-:warning: These rulesets are for testing and development only and are not to be used in production.
+## Development
 
-## Generate SecureDrop rulesets
-
-setup:
+Setup:
 
 ```
 virtualenv --python=python3 .venv
@@ -12,7 +10,17 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-generate rulesets from securedrop directory:
+You can create a test key for signing using:
+
+```
+make test-key
+```
+
+which will create `test-key.jwk` in your current working directory.
+
+## Updating Rulesets
+
+Generate rulesets from securedrop directory:
 
 ```
 python sddir.py
@@ -20,32 +28,8 @@ python sddir.py
 
 This populates the `rulesets` directory.
 
-## Generating signing keys and signing the rulesets
+If you're signing the production rules, see HTTPS Everywhere docs [here](https://github.com/EFForg/https-everywhere/blob/master/docs/en_US/ruleset-update-channels.md) for the signing process. For the production rules this is done via the official signing cermony and the existing SD release key (JWK formatted version of the pubkey is in `release-pubkey.jwk`).
 
-Also see HTTPS Everywhere docs [here](https://github.com/EFForg/https-everywhere/blob/master/docs/en_US/ruleset-update-channels.md).
-
-Generate a private key for signing ruleset releases:
-
-```
-openssl genrsa -out key.pem 4096
-```
-
-Now generate the corresponding public key:
-
-```
-openssl rsa -in key.pem -outform PEM -pubout -out public.pem
-```
-
-Now dump the key in the JWK format which assumes the public key is located in `public.pem` in the same directory:
-
-```
-python jwk.py > key.jwk
-```
-
-(in production this would be done via airgap signing)
-
-## Updating the channel
-
-If you've updated the rules, resign them (described in HTTPS everywhere docs), and then place the files to serve in the root of the git tree, then update the directory listing in `index.html`.
+Then place the files to serve in the root of the git tree, then update the directory listing in `index.html`.
 
 Commit the resulting `index.html` and all files to be served.
