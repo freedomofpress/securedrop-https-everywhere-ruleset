@@ -1,5 +1,0 @@
-<ruleset name="NRK">
-	<target host="www.nrk.no.securedrop.tor.onion" />
-	<rule from="^http[s]?://www.nrk.no.securedrop.tor.onion"
-        to="http://nrkvarslekidu2uz.onion" />
-</ruleset>

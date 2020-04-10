@@ -1,5 +1,0 @@
-<ruleset name="Apache">
-	<target host="www.apache.be.securedrop.tor.onion" />
-	<rule from="^http[s]?://www.apache.be.securedrop.tor.onion"
-        to="http://zdf4nikyuswdzbt6.onion" />
-</ruleset>

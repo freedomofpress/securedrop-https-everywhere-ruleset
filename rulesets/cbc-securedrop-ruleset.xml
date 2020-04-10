@@ -1,5 +1,0 @@
-<ruleset name="CBC">
-	<target host="www.cbc.ca.securedrop.tor.onion" />
-	<rule from="^http[s]?://www.cbc.ca.securedrop.tor.onion"
-        to="http://gppg43zz5d2yfuom3yfmxnnokn3zj4mekt55onlng3zs653ty4fio6qd.onion" />
-</ruleset>
