@@ -1,5 +1,0 @@
-<ruleset name="MormonLeaks">
-	<target host="mormonleaks.io.securedrop.tor.onion" />
-	<rule from="^http[s]?://mormonleaks.io.securedrop.tor.onion"
-        to="http://efeip5ekoqi4upkz.onion" />
-</ruleset>

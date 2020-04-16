@@ -1,5 +1,0 @@
-<ruleset name="Field of Vision">
-	<target host="fieldofvision.org.securedrop.tor.onion" />
-	<rule from="^http[s]?://fieldofvision.org.securedrop.tor.onion"
-        to="http://2mgwjg7ezpxhx5wb7zktijtnuy6qnobvurtberow52hlij2iw6eo5rad.onion" />
-</ruleset>
