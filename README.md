@@ -7,7 +7,7 @@ Setup:
 ```
 virtualenv --python=python3 .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install --require-hashes --no-deps -r requirements.txt
 ```
 
 You can create a test key for signing using:
