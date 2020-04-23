@@ -25,8 +25,9 @@ def get_securedrop_directory() -> Dict:
         directory_entry["base_url"] = urllib.parse.urlparse(
             directory_entry["landing_page_url"]
         ).netloc
+        # For redirect URL, drop TLD from base_url: newsorg.com -> newsorg.securedrop.tor.onion
         directory_entry["securedrop_redirect_url"] = (
-            directory_entry["base_url"] + SECUREDROP_ONION_PSEUDO_TLD
+            directory_entry["base_url"].rsplit('.',1)[0] + SECUREDROP_ONION_PSEUDO_TLD
         )
         directory_entry["onion_addr_with_protocol"] = (
             DEFAULT_ONION_PROTOCOL + directory_entry["onion_address"]
@@ -42,10 +43,9 @@ def get_securedrop_directory() -> Dict:
 def write_custom_ruleset(onboarded_org: str, directory_entries: Dict) -> None:
     directory_entry = directory_entries[onboarded_org]
 
-    ruleset = """<ruleset name="{org_name}">\n\t<target host="{org_url}{securedrop_tld}" />\n\t<rule from="^http[s]?://{securedrop_redirect_url}"
+    ruleset = """<ruleset name="{org_name}">\n\t<target host="{securedrop_redirect_url}" />\n\t<rule from="^http[s]?://{securedrop_redirect_url}"
     to="{onion_addr_with_protocol}" />\n</ruleset>\n""".format(
         org_name=directory_entry["title"],
-        org_url=directory_entry["base_url"],
         securedrop_redirect_url=directory_entry["securedrop_redirect_url"],
         onion_addr_with_protocol=directory_entry["onion_addr_with_protocol"],
         securedrop_tld=SECUREDROP_ONION_PSEUDO_TLD,
@@ -67,6 +67,6 @@ if __name__ == "__main__":
         onboarded_orgs = f.readlines()
     directory_entries = get_securedrop_directory()
     for org in onboarded_orgs:
-        write_custom_ruleset(org, directory_entries)
+        write_custom_ruleset(org.strip(), directory_entries)
 
     print("✔️ Custom rulesets written to directory: ./{}".format(RULESET_DIR))
