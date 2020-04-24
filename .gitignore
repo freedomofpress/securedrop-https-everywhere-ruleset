@@ -4,6 +4,7 @@ private.pem
 
 # Don't commit test keys
 test-key.jwk
+public.pem
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
