@@ -1,6 +1,7 @@
 import re
 import requests
 import os
+import csv
 import urllib
 
 from typing import Dict, List
@@ -40,13 +41,13 @@ def get_securedrop_directory() -> Dict:
     return directory_entry_map
 
 
-def write_custom_ruleset(onboarded_org: str, directory_entries: Dict) -> None:
+def write_custom_ruleset(onboarded_org: str, sd_rewrite_rule: str, directory_entries: Dict) -> None:
     directory_entry = directory_entries[onboarded_org]
 
     ruleset = """<ruleset name="{org_name}">\n\t<target host="{securedrop_redirect_url}" />\n\t<rule from="^http[s]?://{securedrop_redirect_url}"
     to="{onion_addr_with_protocol}" />\n</ruleset>\n""".format(
         org_name=directory_entry["title"],
-        securedrop_redirect_url=directory_entry["securedrop_redirect_url"],
+        securedrop_redirect_url=sd_rewrite_rule,
         onion_addr_with_protocol=directory_entry["onion_addr_with_protocol"],
         securedrop_tld=SECUREDROP_ONION_PSEUDO_TLD,
     )
@@ -64,9 +65,11 @@ if __name__ == "__main__":
     # do so on an opt-in basis. The following text file contains the homepages
     # of the organizations that have opted in.
     with open('onboarded.txt', 'r') as f:
-        onboarded_orgs = f.readlines()
-    directory_entries = get_securedrop_directory()
-    for org in onboarded_orgs:
-        write_custom_ruleset(org.strip(), directory_entries)
+        reader = csv.DictReader(f)
+        directory_entries = get_securedrop_directory()
+        for row in reader:
+            #write_custom_ruleset(org.strip(), directory_entries)
+            write_custom_ruleset(row["primary_domain"], row["sd_rewrite_rule"], directory_entries)
+
 
     print("✔️ Custom rulesets written to directory: ./{}".format(RULESET_DIR))
