@@ -1,0 +1,5 @@
+<ruleset name="The Guardian">
+	<target host="theguardian.securedrop.tor.onion" />
+	<rule from="^http[s]?://theguardian.securedrop.tor.onion"
+    to="http://33y6fjyhs3phzfjj.onion" />
+</ruleset>

@@ -24,7 +24,7 @@ which will create `test-key.jwk` in your current working directory.
 
 1. Ensure they are in the official SecureDrop directory. If they are not, go through the IVF process with the organization.
 
-2. Add their domain to `onboarded.txt` via PR into this repository. We match the domain based on the landing page of the organization, comparing the `netloc` in a URL with structure `scheme://netloc/path;parameters?query#fragment`.
+2. Add their domain name and the requested URL to the `onboarded.txt` via PR into this repository. We match the domain based on the landing page of the organization, comparing the `netloc` in a URL with structure `scheme://netloc/path;parameters?query#fragment`.
 
 3. Next, perform a ruleset release as described below.
 
