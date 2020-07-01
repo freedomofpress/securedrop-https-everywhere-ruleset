@@ -49,8 +49,8 @@ To sign the rules, see HTTPS Everywhere docs [here](https://github.com/EFForg/ht
 
 For the production rules this signing must be done via the official signing ceremony and the existing SD release key (JWK formatted version of the pubkey is in `release-pubkey.jwk`). There is some internal documentation with more detailed instructions on this, ping `@redshiftzero` if you need to do this.
 
-Once you have the signature, place the files to serve in the root of the git tree in this repository,and then update the directory listing in `index.html`.
+Once you have the signature, place the files to serve in the root of the git tree in this repository, and then update the directory listing in `index.html` using the `update_index.sh` shell script in this directory.
 
-Commit the resulting `index.html` and all files to be served.
+Inspect the diff. If it looks good, commit the resulting `index.html` and all files to be served.
 
 Upon merge the ruleset release will be live.
