@@ -2,3 +2,4 @@ primary_domain,sd_rewrite_rule
 lucyparsonslabs.com,lucyparsonslabs.securedrop.tor.onion
 theintercept.com,theintercept.securedrop.tor.onion
 www.theguardian.com,theguardian.securedrop.tor.onion
+www.abc.net.au,abc.au.securedrop.tor.onion
