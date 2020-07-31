@@ -47,7 +47,7 @@ This populates the `rulesets` directory. Inspect them and check all looks sane.
 
 To sign the rules, see HTTPS Everywhere docs [here](https://github.com/EFForg/https-everywhere/blob/master/docs/en_US/ruleset-update-channels.md#2-signing-rulesets-with-this-key) for the signing process. In the step where you remove all HTTPS Everywhere rules from `rules` in the git checkout of the `https-everywhere` git repo, you should copy all rules from `rulesets` generated from the above Python script. You do not need to create a trivial rule as described in the HTTPS Everywhere docs.
 
-For the production rules this signing must be done via the official signing ceremony and the existing SD release key (JWK formatted version of the pubkey is in `release-pubkey.jwk`). There is some internal documentation with more detailed instructions on this, ping `@redshiftzero` if you need to do this.
+For the production rules this signing must be done via the official signing ceremony and the existing SD release key (JWK formatted version of the pubkey is in `release-pubkey.jwk`). There is some internal documentation with more detailed instructions on this, ping `@emkll` if you need to do this.
 
 Once you have the signature, place the files to serve in the root of the git tree in this repository, and then update the directory listing in `index.html` using the `update_index.sh` shell script in this directory.
 
