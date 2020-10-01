@@ -7,4 +7,4 @@ RUN mkdir -p /opt/nginx && chown nginx:nginx /opt/nginx
 
 USER nginx
 RUN mkdir -p /opt/nginx/run /opt/nginx/root/https-everywhere
-COPY index.html latest-rulesets-timestamp default.rulesets.${timestamp}.gz rulesets-signature.${timestamp}.sha256 /opt/nginx/root/https-everywhere
+COPY index.html latest-rulesets-timestamp default.rulesets.${timestamp}.gz rulesets-signature.${timestamp}.sha256 /opt/nginx/root/https-everywhere/
