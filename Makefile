@@ -13,7 +13,7 @@ serve: ## Builds Nginx container to serve generated files
 	@echo "=============================================================================="
 	@echo "          Serving ruleset at http://localhost:4080/https-everywhere/          "
 	@echo "=============================================================================="
-	@docker run --rm -p 4080 "$(image)"
+	@docker run --rm -p 127.0.0.1:4080:4080 "$(image)"
 
 .PHONY: help
 help:
