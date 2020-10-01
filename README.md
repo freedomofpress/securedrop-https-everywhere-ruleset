@@ -51,6 +51,14 @@ For the production rules this signing must be done via the official signing cere
 
 Once you have the signature, place the files to serve in the root of the git tree in this repository, and then update the directory listing in `index.html` using the `update_index.sh` shell script in this directory.
 
-Inspect the diff. If it looks good, commit the resulting `index.html` and all files to be served.
+# Verifying
 
-Upon merge the ruleset release will be live.
+Inspect the diff. If it looks good, commit the resulting `index.html` and all files to be served. To test locally, run
+
+    make serve
+
+And configure your browser to use `http://localhost:4080/https-everywhere/`.
+
+# Deployment
+
+Upon merge the container will be published to `quay.io/freedomofpress` and the new tag will be deployed automatically.
