@@ -1,5 +1,4 @@
-timestamp := $(shell cat latest-rulesets-timestamp)
-image := fpf.local/securedrop-https-everywhere-ruleset:$(timestamp)
+image := fpf.local/securedrop-https-everywhere-ruleset:$(shell cat latest-rulesets-timestamp)
 
 .PHONY: test-key
 test-key: ## Generates a test key for development/testing purposes locally.
@@ -9,7 +8,7 @@ test-key: ## Generates a test key for development/testing purposes locally.
 
 .PHONY: serve
 serve: ## Builds Nginx container to serve generated files
-	@docker build --build-arg "timestamp=$(timestamp)" -t "$(image)" -f docker/Dockerfile .
+	@docker build -t "$(image)" -f docker/Dockerfile .
 	@echo "=============================================================================="
 	@echo "          Serving ruleset at http://localhost:4080/https-everywhere/          "
 	@echo "=============================================================================="
