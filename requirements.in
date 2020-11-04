@@ -1,3 +1,4 @@
 authlib
+cryptography>=3.2
 requests
 pgpy
