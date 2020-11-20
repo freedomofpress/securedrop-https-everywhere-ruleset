@@ -1,0 +1,5 @@
+<ruleset name="Espen Andersen">
+	<target host="espena.securedrop.tor.onion" />
+	<rule from="^http[s]?://espena.securedrop.tor.onion"
+    to="http://tsovw443sbbaizc3mxwuqrnbc4uiml3x3uuinmplthsmpiqdphl7v5yd.onion" />
+</ruleset>

@@ -4,3 +4,5 @@ theintercept.com,theintercept.securedrop.tor.onion
 www.theguardian.com,theguardian.securedrop.tor.onion
 www.abc.net.au,abc.au.securedrop.tor.onion
 www.hmdc.harvard.edu,iqss.harvard.securedrop.tor.onion
+www.investigace.cz,investigace.securedrop.tor.onion
+espenandersen.no,espena.securedrop.tor.onion
