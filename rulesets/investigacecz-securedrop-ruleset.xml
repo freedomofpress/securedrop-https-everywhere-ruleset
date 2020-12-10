@@ -1,0 +1,5 @@
+<ruleset name="Investigace.cz">
+	<target host="investigace.securedrop.tor.onion" />
+	<rule from="^http[s]?://investigace.securedrop.tor.onion"
+    to="http://e2kkexl7exz6rg7fhl4oftkaeojm7wlbw567hqu2tbrjlixsjjoynzad.onion" />
+</ruleset>
