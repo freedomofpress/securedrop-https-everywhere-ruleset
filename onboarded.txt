@@ -8,3 +8,4 @@ www.investigace.cz,investigace.securedrop.tor.onion
 espenandersen.no,espena.securedrop.tor.onion
 www.nytimes.com,nytimes.securedrop.tor.onion
 techcrunch.com,techcrunch.securedrop.tor.onion
+stefaniamaurizi.it,maurizi.securedrop.tor.onion

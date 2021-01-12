@@ -1,0 +1,5 @@
+<ruleset name="Stefania Maurizi">
+	<target host="maurizi.securedrop.tor.onion" />
+	<rule from="^http[s]?://maurizi.securedrop.tor.onion"
+    to="http://jxsb4ovmavjy3r64bak4ha63xwggf3nzf3vikvs23r2avm5rhzmaqtqd.onion" />
+</ruleset>
