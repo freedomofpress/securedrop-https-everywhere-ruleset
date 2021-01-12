@@ -1,0 +1,5 @@
+<ruleset name="iROZHLAS">
+	<target host="irozhlas.securedrop.tor.onion" />
+	<rule from="^http[s]?://irozhlas.securedrop.tor.onion"
+    to="http://3gtoclri7h6xrtjjapfezcerj4dqf3fwfk3jmhrhz25i5pyprmz47gad.onion" />
+</ruleset>
