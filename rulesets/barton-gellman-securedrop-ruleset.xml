@@ -1,0 +1,5 @@
+<ruleset name="Barton Gellman">
+	<target host="bartongellman.securedrop.tor.onion" />
+	<rule from="^http[s]?://bartongellman.securedrop.tor.onion"
+    to="http://uhu2cbivjtonib4ee645ezyvkfmgjerhojscegqsngngtoysu2fv3xqd.onion" />
+</ruleset>
