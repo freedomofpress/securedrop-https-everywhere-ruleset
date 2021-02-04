@@ -6,6 +6,10 @@ test-key: ## Generates a test key for development/testing purposes locally.
 	openssl rsa -in key.pem -outform PEM -pubout -out public.pem
 	python jwk.py > test-key.jwk
 
+.PHONY: rules
+rules: ## Regenerates rulesets in preparation for signing ceremony
+	./scripts/generate-and-sign
+
 .PHONY: serve
 serve: ## Builds Nginx container to serve generated files
 	@docker build -t "$(image)" -f docker/Dockerfile .
