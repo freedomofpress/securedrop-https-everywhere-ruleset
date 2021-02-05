@@ -11,3 +11,5 @@ techcrunch.com,techcrunch.securedrop.tor.onion
 stefaniamaurizi.it,maurizi.securedrop.tor.onion
 www.forbes.com,forbes.securedrop.tor.onion
 www.irozhlas.cz,irozhlas.securedrop.tor.onion
+www.thestar.com,torontostar.securedrop.tor.onion
+tcfmailvault.info,bartongellman.securedrop.tor.onion
