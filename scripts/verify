@@ -3,14 +3,14 @@ set -e
 set -u
 set -o pipefail
 
-LATEST_TIMESTAMP=$(cat latest-rulesets-timestamp)
-LATEST_RULESET=default.rulesets.${LATEST_TIMESTAMP}.gz
+LATEST_TIMESTAMP="$(cat latest-rulesets-timestamp)"
+LATEST_RULESET="default.rulesets.${LATEST_TIMESTAMP}.gz"
 
 if  [ ! -f "${LATEST_RULESET}" ]; then
   echo "Ruleset file '${LATEST_RULESET}' matching latest timestamp '${LATEST_TIMESTAMP}' not found."
   exit 1
 fi
 
-openssl dgst -signature rulesets-signature.${LATEST_TIMESTAMP}.sha256 \
+openssl dgst -signature "rulesets-signature.${LATEST_TIMESTAMP}.sha256" \
   -sigopt rsa_padding_mode:pss -sigopt rsa_pss_saltlen:32 -verify public_release.pem \
-  ${LATEST_RULESET}
+  "${LATEST_RULESET}"
