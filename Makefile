@@ -18,6 +18,11 @@ serve: ## Builds Nginx container to serve generated files
 	@echo "=============================================================================="
 	@docker run --rm -p 127.0.0.1:4080:4080 "$(image)"
 
+.PHONY: verify
+verify: ## Verifies the signature of the latest ruleset. Requires openssl to be installed.
+	@echo "Attempting to verify ruleset signature using openssl."
+	@./scripts/verify
+
 .PHONY: help
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'

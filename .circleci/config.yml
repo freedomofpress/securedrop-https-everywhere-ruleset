@@ -1,0 +1,17 @@
+version: 2.1
+
+jobs:
+  verify:
+    docker:
+      - image: cimg/python:3.7
+    steps:
+      - checkout
+      - run:
+          name: Verify ruleset signature
+          command: |
+            make verify
+
+workflows:
+  verify:
+    jobs:
+      - verify
