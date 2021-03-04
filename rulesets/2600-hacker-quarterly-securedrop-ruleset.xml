@@ -1,0 +1,5 @@
+<ruleset name="2600: The Hacker Quarterly">
+	<target host="2600.securedrop.tor.onion" />
+	<rule from="^http[s]?://2600.securedrop.tor.onion"
+    to="http://cy6wj77vryhcyh6go576hxycjz4wxlo4s5vevdinkw3armwzty5jozyd.onion" />
+</ruleset>
