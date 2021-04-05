@@ -15,3 +15,4 @@ www.thestar.com,torontostar.securedrop.tor.onion
 tcfmailvault.info,bartongellman.securedrop.tor.onion
 www.apache.be,apache.securedrop.tor.onion
 www.2600.com,2600.securedrop.tor.onion
+www.washingtonpost.com,washingtonpost.securedrop.tor.onion
