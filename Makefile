@@ -1,5 +1,7 @@
 image := fpf.local/securedrop-https-everywhere-ruleset:$(shell cat latest-rulesets-timestamp)
 
+DEFAULT_GOAL: rules
+
 .PHONY: test-key
 test-key: ## Generates a test key for development/testing purposes locally.
 	openssl genrsa -out key.pem 4096
