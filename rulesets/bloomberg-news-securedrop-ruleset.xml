@@ -1,0 +1,5 @@
+<ruleset name="Bloomberg News">
+	<target host="bloomberg.securedrop.tor.onion" />
+	<rule from="^http[s]?://bloomberg.securedrop.tor.onion"
+    to="http://ogdwaroarq4p6rnfn2hl4crvldyruyc2g24435qtxmd3twhevg7dsqid.onion" />
+</ruleset>

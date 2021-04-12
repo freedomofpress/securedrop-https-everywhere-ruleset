@@ -1,0 +1,5 @@
+<ruleset name="Aftonbladet">
+	<target host="aftonbladet.securedrop.tor.onion" />
+	<rule from="^http[s]?://aftonbladet.securedrop.tor.onion"
+    to="http://xm33ge4kupk5o66eqxcd2r4fqcplpqb2sbdduf5z2nw4g2jrxe57luid.onion" />
+</ruleset>
