@@ -42,7 +42,12 @@ def get_securedrop_directory() -> Dict:
 
 
 def write_custom_ruleset(onboarded_org: str, sd_rewrite_rule: str, directory_entries: Dict) -> None:
-    directory_entry = directory_entries[onboarded_org]
+    try:
+        directory_entry = directory_entries[onboarded_org]
+    except KeyError:
+        print(f"Failed to find '{onboarded_org}', org names are:")
+        print(directory_entries.keys())
+        raise
 
     ruleset = """<ruleset name="{org_name}">\n\t<target host="{securedrop_redirect_url}" />\n\t<rule from="^http[s]?://{securedrop_redirect_url}"
     to="{onion_addr_with_protocol}" />\n</ruleset>\n""".format(
