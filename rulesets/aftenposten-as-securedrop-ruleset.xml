@@ -1,0 +1,5 @@
+<ruleset name="Aftenposten AS">
+	<target host="aftenposten.securedrop.tor.onion" />
+	<rule from="^http[s]?://aftenposten.securedrop.tor.onion"
+    to="http://tiykfvhb562gheutfnedysnhrxpxoztyszkqyroloyepwzxmxien77id.onion" />
+</ruleset>
