@@ -19,3 +19,5 @@ www.washingtonpost.com,washingtonpost.securedrop.tor.onion
 www.bloomberg.com,bloomberg.securedrop.tor.onion
 www.aftonbladet.se,aftonbladet.securedrop.tor.onion
 www.aftenposten.no,aftenposten.securedrop.tor.onion
+www.sfchronicle.com,sfchronicle.securedrop.tor.onion
+
