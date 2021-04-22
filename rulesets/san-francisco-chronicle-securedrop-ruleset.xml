@@ -1,0 +1,5 @@
+<ruleset name="San Francisco Chronicle">
+	<target host="sfchronicle.securedrop.tor.onion" />
+	<rule from="^http[s]?://sfchronicle.securedrop.tor.onion"
+    to="http://b52gknakgsyqqeq476oi5nymw6yapysfig4owqgwppi5qpuk4az6bxad.onion" />
+</ruleset>
