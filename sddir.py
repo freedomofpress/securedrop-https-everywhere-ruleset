@@ -11,6 +11,8 @@ DEFAULT_ONION_PROTOCOL = "http://"  # We don't store protocol in the directory
 RULESET_DIR = "rulesets"
 
 
+EXEMPTIONS = ["tcfmailvault.info"]
+
 def remove_umlaut(text: str) -> str:
     text = re.sub('ü', 'u', text)
     return text
@@ -74,6 +76,8 @@ if __name__ == "__main__":
         directory_entries = get_securedrop_directory()
         for row in reader:
             #write_custom_ruleset(org.strip(), directory_entries)
+            if row["primary_domain"] in EXEMPTIONS:
+                continue
             write_custom_ruleset(row["primary_domain"], row["sd_rewrite_rule"], directory_entries)
 
 
