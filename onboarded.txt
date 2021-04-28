@@ -21,4 +21,4 @@ www.aftonbladet.se,aftonbladet.securedrop.tor.onion
 www.aftenposten.no,aftenposten.securedrop.tor.onion
 www.sfchronicle.com,sfchronicle.securedrop.tor.onion
 whistlebloweraid.org,whistlebloweraid.securedrop.tor.onion
-sec.theglobeandmail.com,globeandmail.securedrop.tor.onion
+sec.theglobeandmail.com,theglobeandmail.securedrop.tor.onion
