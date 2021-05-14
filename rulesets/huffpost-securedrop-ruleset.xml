@@ -1,0 +1,5 @@
+<ruleset name="HuffPost">
+	<target host="huffpost.securedrop.tor.onion" />
+	<rule from="^http[s]?://huffpost.securedrop.tor.onion"
+    to="http://ppw2pmtagxykinex6uubypsommtrcg6ytdh6bcr6agq2wxnrweao4cad.onion" />
+</ruleset>
