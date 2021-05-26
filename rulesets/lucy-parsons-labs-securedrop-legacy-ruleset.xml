@@ -1,5 +1,0 @@
-<ruleset name="Lucy Parsons Labs">
-	<target host="lucyparsonslabs.com.securedrop.tor.onion" />
-	<rule from="^http[s]?://lucyparsonslabs.com.securedrop.tor.onion"
-    to="http://qn4qfeeslglmwxgb.onion" />
-</ruleset>
