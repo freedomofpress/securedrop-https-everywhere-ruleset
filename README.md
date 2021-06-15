@@ -2,7 +2,7 @@
 
 # HTTPS-Everywhere Rulesets for SecureDrop
 
-`securedrop-https-everywhere-ruleset` is used to create a signed HTTPS Everywhere ruleset that maps user-friendly URLs to Onion URLs for each news organization listed on https://securedrop.org/directory/. Any time a new Onion URL is listed, we add its mapping to our HTTPS Everywhere ruleset and upload it to https://securedrop.org/https-everywhere/. Tor Browser automatically checks for our ruleset on start up and includes the rules in the default HTTPS Everywhere extension (Tor Browser will soon switch to checking https://securedrop.org/https-everywhere-2021/ which uses our new release signing key).
+`securedrop-https-everywhere-ruleset` is used to create a signed HTTPS Everywhere ruleset that maps full-length .onion addresses to user-friendly [onion names](https://securedrop.org/faq/getting-onion-name-your-securedrop/) for some news organizations listed in the [SecureDrop directory](https://securedrop.org/directory/). Any time a new onion name is approved, we add its mapping to our HTTPS Everywhere ruleset and deploy it to https://securedrop.org/https-everywhere/ . Tor Browser automatically includes our ruleset in the default HTTPS Everywhere extension and checks for updates on startup. (Tor Browser will soon switch to checking https://securedrop.org/https-everywhere-2021/ which uses our new release signing key).
 
 ## Development
 
