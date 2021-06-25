@@ -1,5 +1,5 @@
 <ruleset name="Toronto Star">
 	<target host="torontostar.securedrop.tor.onion" />
 	<rule from="^http[s]?://torontostar.securedrop.tor.onion"
-    to="http://5rmajtjkx7pathbou2fktejnmai25anlvxmqv2yoefzmnwkax4qdhkyd.onion" />
+    to="http://yj3b7rgmglcocbbvzrwfbo4d6j2aa7thwupra4yqutbd27v3vxcpvgid.onion" />
 </ruleset>
