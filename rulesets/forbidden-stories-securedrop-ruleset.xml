@@ -1,0 +1,5 @@
+<ruleset name="Forbidden Stories">
+	<target host="forbiddenstories.securedrop.tor.onion" />
+	<rule from="^http[s]?://forbiddenstories.securedrop.tor.onion"
+    to="http://fg25fqpu2dnxp24xs3jlcley4hp2inshpzek44q3czkhq3zffoqk26id.onion" />
+</ruleset>
