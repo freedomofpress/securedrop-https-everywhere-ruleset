@@ -1,0 +1,5 @@
+<ruleset name="Al Jazeera Media Network">
+	<target host="ajiunit.securedrop.tor.onion" />
+	<rule from="^http[s]?://ajiunit.securedrop.tor.onion"
+    to="http://jkta32w5gvk6pmqdfwj67psojot3l2iwoqbdvrvywi5bkudfeandq7id.onion" />
+</ruleset>
