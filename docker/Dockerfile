@@ -1,5 +1,5 @@
-# sha256 as of 2020-09-25 for mainline-alpine
-FROM nginx@sha256:4635b632d2aaf8c37c8a1cf76a1f96d11b899f74caa2c6946ea56d0a5af02c0c
+# sha256 as of 2021-08-18 for nginx:mainline-alpine
+FROM nginx:mainline-alpine@sha256:bead42240255ae1485653a956ef41c9e458eb077fcb6dc664cbc3aa9701a05ce
 
 COPY docker/nginx.conf /etc/nginx
 RUN mkdir -p /opt/nginx && chown nginx:nginx /opt/nginx
