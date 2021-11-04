@@ -4,7 +4,7 @@ import os
 import csv
 import urllib
 
-from typing import Dict, List
+from typing import Dict
 
 SECUREDROP_ONION_PSEUDO_TLD = ".securedrop.tor.onion"
 DEFAULT_ONION_PROTOCOL = "http://"  # We don't store protocol in the directory
@@ -13,8 +13,9 @@ RULESET_DIR = "rulesets"
 
 EXEMPTIONS = ["tcfmailvault.info"]
 
+
 def remove_umlaut(text: str) -> str:
-    text = re.sub('ü', 'u', text)
+    text = re.sub("ü", "u", text)
     return text
 
 
@@ -30,7 +31,7 @@ def get_securedrop_directory() -> Dict:
         ).netloc
         # For redirect URL, drop TLD from base_url: newsorg.com -> newsorg.securedrop.tor.onion
         directory_entry["securedrop_redirect_url"] = (
-            directory_entry["base_url"].rsplit('.',1)[0] + SECUREDROP_ONION_PSEUDO_TLD
+            directory_entry["base_url"].rsplit(".", 1)[0] + SECUREDROP_ONION_PSEUDO_TLD
         )
         directory_entry["onion_addr_with_protocol"] = (
             DEFAULT_ONION_PROTOCOL + directory_entry["onion_address"]
@@ -56,7 +57,6 @@ def write_custom_ruleset(onboarded_org: str, sd_rewrite_rule: str, directory_ent
         org_name=directory_entry["title"],
         securedrop_redirect_url=sd_rewrite_rule,
         onion_addr_with_protocol=directory_entry["onion_addr_with_protocol"],
-        securedrop_tld=SECUREDROP_ONION_PSEUDO_TLD,
     )
 
     RULESET_OUTPUT = "securedrop-ruleset.xml"
@@ -71,14 +71,12 @@ if __name__ == "__main__":
     # We don't want to generate rules for all organizations. Instead we want to
     # do so on an opt-in basis. The following text file contains the homepages
     # of the organizations that have opted in.
-    with open('onboarded.txt', 'r') as f:
+    with open("onboarded.txt", "r") as f:
         reader = csv.DictReader(f)
         directory_entries = get_securedrop_directory()
         for row in reader:
-            #write_custom_ruleset(org.strip(), directory_entries)
             if row["primary_domain"] in EXEMPTIONS:
                 continue
             write_custom_ruleset(row["primary_domain"], row["sd_rewrite_rule"], directory_entries)
-
 
     print("✔️ Custom rulesets written to directory: ./{}".format(RULESET_DIR))
