@@ -1,10 +1,15 @@
+import csv
+import logging
+import os
 import re
 import requests
-import os
-import csv
 import urllib
 
 from typing import Dict
+
+# Configure logging output
+logfmt = "%(asctime)s %(levelname)-8s %(message)s"
+logging.basicConfig(format=logfmt, level=logging.DEBUG, datefmt="%Y-%m-%d %H:%M:%S")
 
 SECUREDROP_ONION_PSEUDO_TLD = ".securedrop.tor.onion"
 DEFAULT_ONION_PROTOCOL = "http://"  # We don't store protocol in the directory
@@ -48,8 +53,8 @@ def write_custom_ruleset(onboarded_org: str, sd_rewrite_rule: str, directory_ent
     try:
         directory_entry = directory_entries[onboarded_org]
     except KeyError:
-        print(f"Failed to find '{onboarded_org}', org names are:")
-        print(directory_entries.keys())
+        logging.error(f"Failed to find '{onboarded_org}', org names are:")
+        logging.error(directory_entries.keys())
         raise
 
     ruleset = """<ruleset name="{org_name}">\n\t<target host="{securedrop_redirect_url}" />\n\t<rule from="^http[s]?://{securedrop_redirect_url}"
@@ -76,7 +81,8 @@ if __name__ == "__main__":
         directory_entries = get_securedrop_directory()
         for row in reader:
             if row["primary_domain"] in EXEMPTIONS:
+                logging.warning(f"Skipping exempted domain: {row['primary_domain']}")
                 continue
             write_custom_ruleset(row["primary_domain"], row["sd_rewrite_rule"], directory_entries)
 
-    print("✔️ Custom rulesets written to directory: ./{}".format(RULESET_DIR))
+    logging.info("✔️ Custom rulesets written to directory: ./{}".format(RULESET_DIR))
