@@ -1,0 +1,5 @@
+<ruleset name="Financial Times">
+	<target host="ft.securedrop.tor.onion" />
+	<rule from="^http[s]?://ft.securedrop.tor.onion"
+    to="http://nqu6crmtnzs2hs5abo2uqni53yqsnnwqnerdxuzyz5yxairxlzjzt6yd.onion" />
+</ruleset>
