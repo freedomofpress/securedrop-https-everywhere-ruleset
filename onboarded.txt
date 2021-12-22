@@ -26,3 +26,4 @@ img.huffingtonpost.com,huffpost.securedrop.tor.onion
 forbiddenstories.org,forbiddenstories.securedrop.tor.onion
 webapps.aljazeera.net,ajiunit.securedrop.tor.onion
 www.ft.com,ft.securedrop.tor.onion
+apps.publicintegrity.org,publicintegrity.securedrop.tor.onion
