@@ -1,10 +1,8 @@
-from authlib.jose import JWK
-from authlib.jose import JWK_ALGORITHMS
+from authlib.jose import JsonWebKey
 
+with open("public.pem", "r") as f:
+    key_file = f.read()
 
-jwk = JWK(algorithms=JWK_ALGORITHMS)
-with open('public.pem', 'r') as f:
-    key = f.read()
-obj = jwk.dumps(key, kty='RSA', indent=4, sort_keys=True)
-key_str = str(obj).replace("'", '"')
-print(key_str)
+key = JsonWebKey.import_key(key_file, {"kty": "RSA"})
+
+print(key.as_json())
