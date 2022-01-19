@@ -1,0 +1,5 @@
+<ruleset name="Lessig.law LLC">
+	<target host="lessig.securedrop.tor.onion" />
+	<rule from="^http[s]?://lessig.securedrop.tor.onion"
+    to="http://o4nhtigrvss5wktskr5ph5m22ewmhk7nr5at2tac2wdsworcqz62vsqd.onion" />
+</ruleset>

@@ -27,3 +27,4 @@ forbiddenstories.org,forbiddenstories.securedrop.tor.onion
 webapps.aljazeera.net,ajiunit.securedrop.tor.onion
 www.ft.com,ft.securedrop.tor.onion
 apps.publicintegrity.org,publicintegrity.securedrop.tor.onion
+lessig.law,lessig.securedrop.tor.onion
