@@ -28,3 +28,5 @@ webapps.aljazeera.net,ajiunit.securedrop.tor.onion
 www.ft.com,ft.securedrop.tor.onion
 apps.publicintegrity.org,publicintegrity.securedrop.tor.onion
 lessig.law,lessig.securedrop.tor.onion
+news.bloomberglaw.com,bloomberglaw.securedrop.tor.onion
+www.reuters.com,reuters.securedrop.tor.onion
