@@ -1,0 +1,5 @@
+<ruleset name="CNN">
+	<target host="cnn.securedrop.tor.onion" />
+	<rule from="^http[s]?://cnn.securedrop.tor.onion"
+    to="http://qmifwf762qftydprw2adbg7hs2mkunac5xrz3cb5busaflji3rja5lid.onion" />
+</ruleset>
