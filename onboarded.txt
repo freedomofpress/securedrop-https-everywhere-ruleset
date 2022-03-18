@@ -9,7 +9,6 @@ www.nytimes.com,nytimes.securedrop.tor.onion
 techcrunch.com,techcrunch.securedrop.tor.onion
 stefaniamaurizi.it,maurizi.securedrop.tor.onion
 www.forbes.com,forbes.securedrop.tor.onion
-www.irozhlas.cz,irozhlas.securedrop.tor.onion
 www.thestar.com,torontostar.securedrop.tor.onion
 tcfmailvault.info,bartongellman.securedrop.tor.onion
 www.apache.be,apache.securedrop.tor.onion
@@ -30,3 +29,4 @@ apps.publicintegrity.org,publicintegrity.securedrop.tor.onion
 lessig.law,lessig.securedrop.tor.onion
 news.bloomberglaw.com,bloomberglaw.securedrop.tor.onion
 www.reuters.com,reuters.securedrop.tor.onion
+www.cnn.com,cnn.securedrop.tor.onion
