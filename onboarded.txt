@@ -30,3 +30,4 @@ lessig.law,lessig.securedrop.tor.onion
 news.bloomberglaw.com,bloomberglaw.securedrop.tor.onion
 www.reuters.com,reuters.securedrop.tor.onion
 www.cnn.com,cnn.securedrop.tor.onion
+propublica.org,propublica.securedrop.tor.onion

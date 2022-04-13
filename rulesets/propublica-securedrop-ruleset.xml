@@ -1,0 +1,5 @@
+<ruleset name="ProPublica">
+	<target host="propublica.securedrop.tor.onion" />
+	<rule from="^http[s]?://propublica.securedrop.tor.onion"
+    to="http://lvtu6mh6dd6ynqcxtd2mseqfkm7g2iuxvjobbyzpgx2jt427zvd7n3ad.onion" />
+</ruleset>
