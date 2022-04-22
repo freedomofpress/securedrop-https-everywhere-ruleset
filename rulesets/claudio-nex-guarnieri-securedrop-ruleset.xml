@@ -1,0 +1,5 @@
+<ruleset name="Claudio Guarnieri">
+	<target host="nex.securedrop.tor.onion" />
+	<rule from="^http[s]?://nex.securedrop.tor.onion"
+    to="http://7dw7foypguycptlodmkscnziw5a65ilivzz6ajiei3yhe3gsfojlqwad.onion" />
+</ruleset>

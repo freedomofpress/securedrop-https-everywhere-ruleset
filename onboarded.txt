@@ -31,3 +31,5 @@ news.bloomberglaw.com,bloomberglaw.securedrop.tor.onion
 www.reuters.com,reuters.securedrop.tor.onion
 www.cnn.com,cnn.securedrop.tor.onion
 propublica.org,propublica.securedrop.tor.onion
+nex.sx,nex.securedrop.tor.onion
+www.cbc.ca,cbcrc.securedrop.tor.onion
