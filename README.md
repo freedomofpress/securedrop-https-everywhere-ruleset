@@ -30,7 +30,7 @@ which will create `test-key.jwk` in your current working directory.
 
 2. Add their domain name and the requested URL to the `onboarded.txt` via PR into this repository. We match the domain based on the landing page of the organization, comparing the `netloc` in a URL with structure `scheme://netloc/path;parameters?query#fragment`.
 
-3. Next, generate and sign the update ruleset using the following command (requires signing key, please ping `@zenmonkeykstop` for assistance):
+3. Next, generate and sign the update ruleset using the following command (requires signing key, please ping a signing key holder for assistance):
 
 ```
 ./scripts/generate-and-sign
