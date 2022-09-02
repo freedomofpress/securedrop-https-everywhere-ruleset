@@ -1,0 +1,5 @@
+<ruleset name="POLITICO">
+	<target host="politico.securedrop.tor.onion" />
+	<rule from="^http[s]?://politico.securedrop.tor.onion"
+    to="http://mzi5yynpd6qqq3lnh7vnaojy36v3hcorytsut47zwkguhnorduyxwead.onion" />
+</ruleset>
