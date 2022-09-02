@@ -33,3 +33,4 @@ www.cnn.com,cnn.securedrop.tor.onion
 propublica.org,propublica.securedrop.tor.onion
 nex.sx,nex.securedrop.tor.onion
 www.cbc.ca,cbcrc.securedrop.tor.onion
+www.politico.com,politico.securedrop.tor.onion
