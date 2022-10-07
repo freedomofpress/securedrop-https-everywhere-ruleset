@@ -33,3 +33,5 @@ propublica.org,propublica.securedrop.tor.onion
 nex.sx,nex.securedrop.tor.onion
 www.cbc.ca,cbcrc.securedrop.tor.onion
 www.politico.com,politico.securedrop.tor.onion
+tv2.dk,tv2.dk.securedrop.tor.onion
+aftenbladet.no,aftenbladet.securedrop.tor.onion
