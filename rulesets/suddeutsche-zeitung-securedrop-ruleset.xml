@@ -1,0 +1,5 @@
+<ruleset name="Suddeutsche Zeitung">
+	<target host="sueddeutsche.securedrop.tor.onion" />
+	<rule from="^http[s]?://sueddeutsche.securedrop.tor.onion"
+    to="http://udhauo3m3fh7v6yfiuornjzxn3fh6vlp4ooo3wogvghcnv5xik6mnayd.onion" />
+</ruleset>
