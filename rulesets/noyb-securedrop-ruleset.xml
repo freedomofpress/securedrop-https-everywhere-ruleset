@@ -1,0 +1,5 @@
+<ruleset name="NOYB">
+	<target host="noyb.securedrop.tor.onion" />
+	<rule from="^http[s]?://noyb.securedrop.tor.onion"
+    to="http://xjc4s5z26i2z5tzjzj3w6jwzuomedzsahq4tccktwdcs6fldt4ojznqd.onion" />
+</ruleset>

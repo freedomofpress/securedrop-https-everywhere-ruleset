@@ -36,3 +36,4 @@ www.politico.com,politico.securedrop.tor.onion
 tv2.dk,tv2.dk.securedrop.tor.onion
 aftenbladet.no,aftenbladet.securedrop.tor.onion
 www.sueddeutsche.de,sueddeutsche.securedrop.tor.onion
+noyb.eu,noyb.securedrop.tor.onion
