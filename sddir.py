@@ -16,7 +16,7 @@ DEFAULT_ONION_PROTOCOL = "http://"  # We don't store protocol in the directory
 RULESET_DIR = "rulesets"
 
 # tcfmailvault.info = unlisted SecureDrop; all others: extended outage
-EXEMPTIONS = ["tcfmailvault.info", "espenandersen.no", "www.forbes.com", "www.sfchronicle.com"]
+EXEMPTIONS = ["tcfmailvault.info", "espenandersen.no", "www.sfchronicle.com"]
 
 
 def remove_umlaut(text: str) -> str:
