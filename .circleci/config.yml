@@ -4,7 +4,7 @@ version: 2.1
 jobs:
   verify:
     docker:
-      - image: cimg/python:3.7
+      - image: cimg/python:3.9
     steps:
       - checkout
       - run:
@@ -13,7 +13,7 @@ jobs:
             make verify
   lint:
     docker:
-      - image: cimg/python:3.7
+      - image: cimg/python:3.9
     steps:
       - checkout
       - run:
