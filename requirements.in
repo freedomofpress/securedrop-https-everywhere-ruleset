@@ -1,5 +1,5 @@
 authlib
-cryptography>=3.2
+cryptography>=39.0.1
 # urllib3 versions <1.26.5 are subject to CVE-2021-33503; older requests
 # versions specify incompatible version constraints
 requests>=2.26.0
