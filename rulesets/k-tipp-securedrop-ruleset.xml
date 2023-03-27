@@ -1,0 +1,5 @@
+<ruleset name="K-Tipp">
+	<target host="ktipp.securedrop.tor.onion" />
+	<rule from="^http[s]?://ktipp.securedrop.tor.onion"
+    to="http://tukldpfzdizsrfyvdljnipmvix2dcb5hmfoemcidkw7bq56wxblk6did.onion" />
+</ruleset>
