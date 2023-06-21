@@ -1,6 +1,6 @@
 authlib
-cryptography>=39.0.1
+cryptography>=41.0.0
 # urllib3 versions <1.26.5 are subject to CVE-2021-33503; older requests
 # versions specify incompatible version constraints
-requests>=2.26.0
+requests>=2.31.0
 pgpy
