@@ -1,0 +1,5 @@
+<ruleset name="Taz">
+	<target host="taz.securedrop.tor.onion" />
+	<rule from="^http[s]?://taz.securedrop.tor.onion"
+    to="http://tazleakssvtc2lqrhkpvbzo6qwolcldzkzoexo7wombufd6a573bhlid.onion" />
+</ruleset>
