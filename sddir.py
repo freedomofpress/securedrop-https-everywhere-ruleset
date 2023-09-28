@@ -22,6 +22,8 @@ EXEMPTIONS = [
     "www.sfchronicle.com",
     "propublica.org",
     "aftenbladet.no",
+    "apps.publicintegrity.org",
+    "www.ktipp.ch",
 ]
 
 
