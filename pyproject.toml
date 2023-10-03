@@ -1,2 +1,19 @@
+[tool.poetry]
+name = "securedrop-https-everywhere-ruleset"
+version = "0.0.0"
+description = "..."
+authors = ["SecureDrop Team <securedrop@freedom.press>"]
+
+[tool.poetry.dependencies]
+python = ">= 3.8"
+authlib = ">=1.1.0"
+certifi = "*"
+cryptography = ">=41.0.3"
+requests = ">=2.31.0"
+pgpy = ">=0.6.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+
 [tool.black]
 line-length = 100
