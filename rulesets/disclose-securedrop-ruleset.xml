@@ -1,0 +1,5 @@
+<ruleset name="Disclose">
+	<target host="disclose.securedrop.tor.onion" />
+	<rule from="^http[s]?://disclose.securedrop.tor.onion"
+    to="http://3tcbrdg2ejwu5nzbjg7xqixkis6mdbgkkthcyxmzv2q3oi6v7th5ahqd.onion" />
+</ruleset>
