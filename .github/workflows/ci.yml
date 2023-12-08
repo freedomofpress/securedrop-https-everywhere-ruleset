@@ -1,0 +1,30 @@
+---
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    container: debian:bullseye
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          apt-get update && apt-get install --yes --no-install-recommends make openssl
+      - name: Verify ruleset signature
+        run: |
+          make verify
+  lint:
+    runs-on: ubuntu-latest
+    container: debian:bullseye
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          apt-get update && apt-get install --yes --no-install-recommends make python3 python3-pip
+          pip install poetry==1.6.1
+          poetry install --no-ansi
+      - name: Check code formatting via black
+        run: |
+            make check-black
