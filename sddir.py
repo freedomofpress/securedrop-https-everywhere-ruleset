@@ -24,6 +24,7 @@ EXEMPTIONS = [
     "aftenbladet.no",
     "apps.publicintegrity.org",
     "www.ktipp.ch",
+    "www.abc.net.au",
 ]
 
 
