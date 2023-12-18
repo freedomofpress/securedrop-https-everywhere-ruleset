@@ -8,7 +8,7 @@ if [ $# -ne 2 ]; then
 fi
 
 
-RULESETS_FILE=rules/default.rulesets
+RULESETS_FILE=rulesets/default.rulesets
 
 SIGNED_SHA256SUM_BASE64=`mktemp /tmp/ruleset-signature.sha256.base64.XXXXXXXX`
 trap 'rm $SIGNED_SHA256SUM_BASE64' EXIT
