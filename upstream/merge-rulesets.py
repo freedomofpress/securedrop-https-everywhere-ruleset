@@ -14,6 +14,7 @@ import os
 import unicodedata
 import xml.etree.ElementTree
 
+
 def normalize(f):
     """
     OSX and Linux filesystems encode composite characters differently in
@@ -21,6 +22,7 @@ def normalize(f):
     """
     f = unicodedata.normalize("NFC", f)
     return f
+
 
 # commandline arguments parsing (nobody use it, though)
 parser = argparse.ArgumentParser(description="Merge rulesets")
@@ -80,7 +82,9 @@ for filename in sorted(files):
                     trivialNameSecureCookie["host"] = child.attrib["host"]
                     trivialNameSecureCookie["name"] = ".+"
                 else:
-                    trivialNameSecureCookie["host"] = (trivialNameSecureCookie["host"] + "|" + child.attrib["host"])
+                    trivialNameSecureCookie["host"] = (
+                        trivialNameSecureCookie["host"] + "|" + child.attrib["host"]
+                    )
             else:
                 sc = {}
                 sc["host"] = child.attrib["host"]
@@ -92,15 +96,15 @@ for filename in sorted(files):
             if len(ruleset["exclusion"]) == 0:
                 ruleset["exclusion"].append(child.attrib["pattern"])
             else:
-                ruleset["exclusion"][0] = (ruleset["exclusion"][0] + "|" + child.attrib["pattern"])
+                ruleset["exclusion"][0] = ruleset["exclusion"][0] + "|" + child.attrib["pattern"]
 
     if trivialNameSecureCookie:
         ruleset["securecookie"].insert(0, trivialNameSecureCookie)
 
-    library.append(ruleset);
+    library.append(ruleset)
 
 # Write to default.rulesets
-print(" * Writing JSON library to %s and %s"% (ofn, ojson) )
+print(" * Writing JSON library to %s and %s" % (ofn, ojson))
 outfile = open(ofn, "w")
 jsonout = open(ojson, "w")
 
