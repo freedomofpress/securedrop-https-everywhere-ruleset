@@ -1,0 +1,5 @@
+<ruleset name="DR - Danish Broadcasting Corporation">
+	<target host="dr.securedrop.tor.onion" />
+	<rule from="^http[s]?://dr.securedrop.tor.onion"
+    to="http://hpaauqmv2wegiu4cz6st6hty4s7gwqol272xhcu3xmh6azw2f2zffgid.onion" />
+</ruleset>
