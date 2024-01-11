@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container: debian:bullseye
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install dependencies
         run: |
           apt-get update && apt-get install --yes --no-install-recommends make openssl
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     container: debian:bullseye
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Install dependencies
         run: |
           apt-get update && apt-get install --yes --no-install-recommends make python3 python3-pip
