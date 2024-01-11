@@ -6,8 +6,9 @@ private.pem
 test-key.jwk
 public.pem
 
-# Ignore upstream EFF repo
-https-everywhere/
+# Generated files
+rulesets/default.rulesets
+rulesets/default.rulesets.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
