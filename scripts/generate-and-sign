@@ -6,44 +6,15 @@
 #
 #   https://github.com/EFForg/https-everywhere/blob/master/docs/en_US/ruleset-update-channels.md#signing
 #
-set -e
-set -u
-set -o pipefail
-
-
-# We need the upstream repo by EFF for a few select scripts.
-https_everywhere_repo="https-everywhere"
-if [[ ! -d "$https_everywhere_repo" ]]; then
-    echo "Cloning upstream https-everywhere repo for scripts..."
-    echo "WARNING: Can take a long time! ~10m even on fast connections."
-    git clone https://github.com/EFForg/https-everywhere
-else
-    echo "Found https-everywhere repo locally, reusing..."
-fi
+set -euo pipefail
 
 # Generate the SD rulesets
 echo "Generating SecureDrop Onion Name rulesets..."
 python3 sddir.py
 
-# The EFF scripts require paths to be relative, so copy into subdirs.
-echo "Copying SecureDrop Onion Name rulesets ..."
-rm -f "${https_everywhere_repo}/rules/"*.xml
-cp rulesets/*.xml "${https_everywhere_repo}/rules/"
-cp public_release.pem "${https_everywhere_repo}/"
-
-# Switch to upstream subdir, for access to tooling
-pushd "$https_everywhere_repo"
-sd_rules_dir="securedrop-rules"
-rm -rf "$sd_rules_dir"
-mkdir "$sd_rules_dir"
-python3 utils/merge-rulesets.py
+python3 upstream/merge-rulesets.py --source_dir rulesets
 echo "Preparing rulesets for airgapped signature request..."
-./utils/sign-rulesets/async-request.sh public_release.pem "$sd_rules_dir"
-
-# Return to SD ruleset repo root
-popd
-echo "Copying rules to SecureDrop ruleset repo..."
-cp -v "${https_everywhere_repo}/${sd_rules_dir}/"* .
+./upstream/async-request.sh public_release.pem .
 
 echo "Updating index for SecureDrop rules..."
 ./update_index.sh
