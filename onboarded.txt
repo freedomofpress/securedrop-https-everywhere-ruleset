@@ -4,7 +4,7 @@ www.theguardian.com,theguardian.securedrop.tor.onion
 www.abc.net.au,abc.au.securedrop.tor.onion
 www.hmdc.harvard.edu,iqss.harvard.securedrop.tor.onion
 espenandersen.no,espena.securedrop.tor.onion
-www.nytimes.com,nytimes.securedrop.tor.onion
+www.nytimes.com,nytimes.securedrop.tor.onion,yes
 techcrunch.com,techcrunch.securedrop.tor.onion
 stefaniamaurizi.it,maurizi.securedrop.tor.onion
 www.forbes.com,forbes.securedrop.tor.onion
@@ -12,7 +12,7 @@ www.thestar.com,torontostar.securedrop.tor.onion
 tcfmailvault.info,bartongellman.securedrop.tor.onion
 www.apache.be,apache.securedrop.tor.onion
 www.2600.com,2600.securedrop.tor.onion
-www.washingtonpost.com,washingtonpost.securedrop.tor.onion
+www.washingtonpost.com,washingtonpost.securedrop.tor.onion,yes
 www.bloomberg.com,bloomberg.securedrop.tor.onion
 www.aftonbladet.se,aftonbladet.securedrop.tor.onion
 www.aftenposten.no,aftenposten.securedrop.tor.onion
