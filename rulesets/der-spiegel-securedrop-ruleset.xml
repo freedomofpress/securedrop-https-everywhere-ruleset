@@ -1,0 +1,5 @@
+<ruleset name="Der Spiegel">
+	<target host="spiegel.securedrop.tor.onion" />
+	<rule from="^http[s]?://spiegel.securedrop.tor.onion"
+    to="http://q6vdlj2ukulrqk37piqgxucpcwtxzdjhvjzqrfbevuhrzimsgjltmpqd.onion" />
+</ruleset>
