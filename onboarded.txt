@@ -39,3 +39,5 @@ www.ktipp.ch,ktipp.securedrop.tor.onion
 taz.de,taz.securedrop.tor.onion
 disclose.ngo,disclose.securedrop.tor.onion
 www.dr.dk,dr.securedrop.tor.onion
+www.spiegel.de,spiegel.securedrop.tor.onion
+www.dagbladet.no,dagbladet.securedrop.tor.onion
