@@ -25,6 +25,7 @@ EXEMPTIONS = [
     "apps.publicintegrity.org",
     "www.ktipp.ch",
     "www.abc.net.au",
+    "img.huffingtonpost.com",
 ]
 
 

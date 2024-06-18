@@ -41,3 +41,4 @@ disclose.ngo,disclose.securedrop.tor.onion
 www.dr.dk,dr.securedrop.tor.onion
 www.spiegel.de,spiegel.securedrop.tor.onion
 www.dagbladet.no,dagbladet.securedrop.tor.onion
+reportersunited.gr,greekleaks.securedrop.tor.onion
