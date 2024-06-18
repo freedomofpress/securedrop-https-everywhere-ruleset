@@ -1,0 +1,5 @@
+<ruleset name="Greekleaks">
+	<target host="greekleaks.securedrop.tor.onion" />
+	<rule from="^http[s]?://greekleaks.securedrop.tor.onion"
+    to="http://jatasaqcoe7lqdpcyxo7vl3e5tdvl5jgmtadfat77i25qdj6z6a4ulad.onion" />
+</ruleset>
