@@ -5,7 +5,7 @@ description = "..."
 authors = ["SecureDrop Team <securedrop@freedom.press>"]
 
 [tool.poetry.dependencies]
-python = ">= 3.8"
+python = ">= 3.11"
 authlib = ">=1.1.0"
 certifi = "*"
 cryptography = ">=41.0.3"
