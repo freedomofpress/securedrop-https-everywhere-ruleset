@@ -26,6 +26,7 @@ EXEMPTIONS = [
     "www.ktipp.ch",
     "www.abc.net.au",
     "img.huffingtonpost.com",
+    "disclose.ngo",
 ]
 
 
