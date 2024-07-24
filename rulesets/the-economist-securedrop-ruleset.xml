@@ -1,0 +1,5 @@
+<ruleset name="The Economist">
+	<target host="theeconomist.securedrop.tor.onion" />
+	<rule from="^http[s]?://theeconomist.securedrop.tor.onion"
+    to="http://mxmddqsh4jnr4gjan37ayin3fu5ecnejxge4wjhj4i45qq5djbxdjtad.onion" />
+</ruleset>
