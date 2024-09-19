@@ -42,6 +42,7 @@ serve: ## Builds Nginx container to serve generated files
 verify: ## Verifies the signature of the latest ruleset. Requires openssl to be installed.
 	@echo "Attempting to verify ruleset signature using openssl."
 	@./scripts/verify
+	@poetry run pytest -v
 
 .PHONY: help
 help:
