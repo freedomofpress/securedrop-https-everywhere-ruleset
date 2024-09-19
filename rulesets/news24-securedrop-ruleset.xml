@@ -1,0 +1,5 @@
+<ruleset name="News24">
+	<target host="news24.securedrop.tor.onion" />
+	<rule from="^http[s]?://news24.securedrop.tor.onion"
+    to="http://uhmj4j5pnwbpmkebfze3qgjmkum465fvok376nxtpku5yvyv5takz6qd.onion" />
+</ruleset>
