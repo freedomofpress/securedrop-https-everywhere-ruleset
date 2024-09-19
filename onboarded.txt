@@ -43,3 +43,4 @@ www.spiegel.de,spiegel.securedrop.tor.onion
 www.dagbladet.no,dagbladet.securedrop.tor.onion
 reportersunited.gr,greekleaks.securedrop.tor.onion
 www.economist.com,theeconomist.securedrop.tor.onion
+www.news24.com,news24.securedrop.tor.onion
