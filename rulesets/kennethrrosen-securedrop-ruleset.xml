@@ -1,0 +1,5 @@
+<ruleset name="Kenneth R. Rosen">
+	<target host="kennethrrosen.securedrop.tor.onion" />
+	<rule from="^http[s]?://kennethrrosen.securedrop.tor.onion"
+    to="http://dpsw5tvlh2pccviydqw2cz5tjszd34zcdj322oikydqvgsqwitxup7yd.onion" />
+</ruleset>

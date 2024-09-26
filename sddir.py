@@ -29,6 +29,7 @@ EXEMPTIONS = [
     "disclose.ngo",
     "techcrunch.com",
     "tv2.dk",
+    "webapps.aljazeera.net",
 ]
 
 
