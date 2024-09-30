@@ -7,7 +7,6 @@ test-key.jwk
 public.pem
 
 # Generated files
-rulesets/default.rulesets
 rulesets/default.rulesets.json
 
 # Byte-compiled / optimized / DLL files

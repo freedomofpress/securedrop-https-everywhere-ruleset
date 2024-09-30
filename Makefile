@@ -1,6 +1,6 @@
 image := fpf.local/securedrop-https-everywhere-ruleset:$(shell cat latest-rulesets-timestamp)
 
-DEFAULT_GOAL: rules
+DEFAULT_GOAL: help
 
 .PHONY: check-black
 check-black: ## Check Python source code formatting with black
@@ -16,9 +16,19 @@ test-key: ## Generates a test key for development/testing purposes locally.
 	openssl rsa -in key.pem -outform PEM -pubout -out public.pem
 	poetry run python jwk.py > test-key.jwk
 
-.PHONY: rules
-rules: ## Regenerates rulesets in preparation for signing ceremony
-	poetry run ./scripts/generate-and-sign
+.PHONY: generate
+generate: ## Regenerates rulesets in preparation for signing ceremony
+	echo "Generating SecureDrop Onion Name rulesets..."
+	poetry run python3 sddir.py
+	poetry run python3 upstream/merge-rulesets.py --source_dir rulesets
+
+.PHONY: sign
+sign: ## Signs the latest ruleset
+	echo "Preparing rulesets for airgapped signature request..."
+	./upstream/async-request.sh public_release.pem .
+	echo "Updating index for SecureDrop rules..."
+	./update_index.sh
+	echo "Finished. Please review local changes, and commit as appropriate."
 
 .PHONY: serve
 serve: ## Builds Nginx container to serve generated files
@@ -32,6 +42,7 @@ serve: ## Builds Nginx container to serve generated files
 verify: ## Verifies the signature of the latest ruleset. Requires openssl to be installed.
 	@echo "Attempting to verify ruleset signature using openssl."
 	@./scripts/verify
+	@poetry run pytest -v
 
 .PHONY: help
 help:
