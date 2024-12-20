@@ -14,7 +14,7 @@ pgpy = ">=0.6.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "*"
-pytest = "^8.3.3"
+pytest = "^8.3.4"
 
 [tool.black]
 line-length = 100
