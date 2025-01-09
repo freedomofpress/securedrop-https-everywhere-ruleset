@@ -2,6 +2,9 @@ image := fpf.local/securedrop-https-everywhere-ruleset:$(shell cat latest-rulese
 
 DEFAULT_GOAL: help
 
+.PHONY: lint
+lint: check-black zizmor ## Run all linters
+
 .PHONY: check-black
 check-black: ## Check Python source code formatting with black
 	@poetry run black --check --diff ./
@@ -9,6 +12,10 @@ check-black: ## Check Python source code formatting with black
 .PHONY: black
 black: ## Format Python source code with black
 	@poetry run black ./
+
+.PHONY: zizmor
+zizmor: ## Lint GitHub Actions workflows
+	@poetry run zizmor .
 
 .PHONY: test-key
 test-key: ## Generates a test key for development/testing purposes locally.
