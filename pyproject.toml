@@ -15,7 +15,7 @@ pgpy = ">=0.6.0"
 [tool.poetry.group.dev.dependencies]
 black = "*"
 pytest = "^8.3.4"
-zizmor = "^1.0.0"
+zizmor = "^1.0.1"
 
 [tool.black]
 line-length = 100
