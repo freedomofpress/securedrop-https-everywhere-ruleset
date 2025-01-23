@@ -1,5 +1,0 @@
-<ruleset name="Institute for Quantitative Social Science at Harvard University">
-	<target host="iqss.harvard.securedrop.tor.onion" />
-	<rule from="^http[s]?://iqss.harvard.securedrop.tor.onion"
-    to="http://5kcyaqagvnrvyan7y5ntzreqsn2msowqlmtoo46qju2pctlbkzzztxqd.onion" />
-</ruleset>
