@@ -1,5 +1,0 @@
-<ruleset name="TV2 Denmark">
-	<target host="tv2.dk.securedrop.tor.onion" />
-	<rule from="^http[s]?://tv2.dk.securedrop.tor.onion"
-    to="http://srumyob2jq5nvppzt66aaab333n2wmq6xgkg4khfe24ixdb7umf7mtyd.onion" />
-</ruleset>

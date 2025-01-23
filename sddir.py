@@ -29,7 +29,6 @@ EXEMPTIONS = [
     "img.huffingtonpost.com",
     "disclose.ngo",
     "techcrunch.com",
-    "tv2.dk",
     "webapps.aljazeera.net",
     "www.apache.be",
     "www.dr.dk",
@@ -40,8 +39,6 @@ EXEMPTIONS = [
 # * https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/41831
 SUBDOMAIN_EXEMPTIONS = [
     "abc.au.securedrop.tor.onion",
-    "iqss.harvard.securedrop.tor.onion",
-    "tv2.dk.securedrop.tor.onion",
 ]
 
 

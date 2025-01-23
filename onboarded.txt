@@ -2,7 +2,6 @@ primary_domain,sd_rewrite_rule,is_https
 theintercept.com,theintercept.securedrop.tor.onion
 www.theguardian.com,theguardian.securedrop.tor.onion
 www.abc.net.au,abc.au.securedrop.tor.onion
-www.hmdc.harvard.edu,iqss.harvard.securedrop.tor.onion
 espenandersen.no,espena.securedrop.tor.onion
 www.nytimes.com,nytimes.securedrop.tor.onion,yes
 techcrunch.com,techcrunch.securedrop.tor.onion
@@ -30,7 +29,6 @@ www.cnn.com,cnn.securedrop.tor.onion
 propublica.org,propublica.securedrop.tor.onion
 www.cbc.ca,cbcrc.securedrop.tor.onion
 www.politico.com,politico.securedrop.tor.onion
-tv2.dk,tv2.dk.securedrop.tor.onion
 aftenbladet.no,aftenbladet.securedrop.tor.onion
 www.sueddeutsche.de,sueddeutsche.securedrop.tor.onion
 noyb.eu,noyb.securedrop.tor.onion
