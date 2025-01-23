@@ -3,6 +3,7 @@ import logging
 import os
 import re
 import requests
+import sys
 import textwrap
 import urllib
 from urllib.parse import urlparse
@@ -30,6 +31,15 @@ EXEMPTIONS = [
     "techcrunch.com",
     "tv2.dk",
     "webapps.aljazeera.net",
+]
+
+# legacy domains that have a subdomain before we stopped allowing them; see:
+# * https://github.com/freedomofpress/securedrop-https-everywhere-ruleset/issues/219
+# * https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/41831
+SUBDOMAIN_EXEMPTIONS = [
+    "abc.au.securedrop.tor.onion",
+    "iqss.harvard.securedrop.tor.onion",
+    "tv2.dk.securedrop.tor.onion",
 ]
 
 
@@ -103,6 +113,16 @@ if __name__ == "__main__":
         reader = csv.DictReader(f)
         directory_entries = get_securedrop_directory()
         for row in reader:
+            # Validate that no subdomains are in the onion address
+            # (per https://github.com/freedomofpress/securedrop-https-everywhere-ruleset/issues/219)
+            if "." in row["sd_rewrite_rule"].removesuffix(".securedrop.tor.onion"):
+                logging.error(f"Subdomain not allowed in onion address: {row['sd_rewrite_rule']}")
+                if row["sd_rewrite_rule"] in SUBDOMAIN_EXEMPTIONS:
+                    logging.warning(
+                        f"Temporarily allowing exempted subdomain: {row['sd_rewrite_rule']}"
+                    )
+                else:
+                    sys.exit(1)
             if row["primary_domain"] in EXEMPTIONS:
                 logging.warning(f"Skipping exempted domain: {row['primary_domain']}")
                 continue
