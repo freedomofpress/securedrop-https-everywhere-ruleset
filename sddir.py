@@ -31,6 +31,8 @@ EXEMPTIONS = [
     "techcrunch.com",
     "tv2.dk",
     "webapps.aljazeera.net",
+    "www.apache.be",
+    "www.dr.dk",
 ]
 
 # legacy domains that have a subdomain before we stopped allowing them; see:
