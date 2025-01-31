@@ -1,5 +1,5 @@
 <ruleset name="ABC">
-	<target host="abc.au.securedrop.tor.onion" />
-	<rule from="^http[s]?://abc.au.securedrop.tor.onion"
+	<target host="abcau.securedrop.tor.onion" />
+	<rule from="^http[s]?://abcau.securedrop.tor.onion"
     to="http://dqa4zahticcobfq5rmmmbewbdtyiznbl75hu23k4i37y7yfoosrh7mqd.onion" />
 </ruleset>
