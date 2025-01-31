@@ -95,10 +95,16 @@ def write_custom_ruleset(
             onion_addr=onion_addr,
         )
     )
+    # Temporary workaround to allow abc.au to have two domains
+    # while we migrate from abc.au to abcau (see #219, #222).
+    if sd_rewrite_rule == "abc.au.securedrop.tor.onion":
+        slug = "abc-legacy"
+    else:
+        slug = directory_entry["slug"]
 
     RULESET_OUTPUT = "securedrop-ruleset.xml"
     with open(
-        os.path.join(RULESET_DIR, directory_entry["slug"] + "-" + RULESET_OUTPUT),
+        os.path.join(RULESET_DIR, slug + "-" + RULESET_OUTPUT),
         "w",
     ) as f:
         f.write(ruleset)
