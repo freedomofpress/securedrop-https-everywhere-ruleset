@@ -18,8 +18,8 @@ TIMESTAMP=`date +%s`
 REFERENCE=`git rev-parse HEAD`
 echo "{ \"timestamp\": $TIMESTAMP, \"reference\": \"$REFERENCE\", \"rulesets\":" "`cat $RULESETS_FILE`" "}" | tr -d '\n' | gzip -nc > $2/default.rulesets.$TIMESTAMP.gz
 
-echo 'Hash for signing: '
-sha256sum $2/default.rulesets.$TIMESTAMP.gz | cut -f1 -d' '
+echo 'Hash for signing (do not include spaces): '
+sha256sum $2/default.rulesets.$TIMESTAMP.gz | cut -f1 -d' ' | sed 's/.\{4\}/& /g'
 echo metahash for confirmation only $(sha256sum $2/default.rulesets.$TIMESTAMP.gz | cut -f1 -d' ' | tr -d '\n' | sha256sum | cut -c1-6) ...
 
 echo 'Paste in the data from the QR code, then type Ctrl-D:'
