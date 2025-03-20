@@ -1,7 +1,6 @@
 primary_domain,sd_rewrite_rule,is_https
 theintercept.com,theintercept.securedrop.tor.onion
 www.theguardian.com,theguardian.securedrop.tor.onion
-www.abc.net.au,abc.au.securedrop.tor.onion
 www.abc.net.au,abcau.securedrop.tor.onion
 espenandersen.no,espena.securedrop.tor.onion
 www.nytimes.com,nytimes.securedrop.tor.onion,yes

@@ -32,13 +32,7 @@ EXEMPTIONS = [
     "webapps.aljazeera.net",
     "www.apache.be",
     "www.dr.dk",
-]
-
-# legacy domains that have a subdomain before we stopped allowing them; see:
-# * https://github.com/freedomofpress/securedrop-https-everywhere-ruleset/issues/219
-# * https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/41831
-SUBDOMAIN_EXEMPTIONS = [
-    "abc.au.securedrop.tor.onion",
+    "noyb.eu",
 ]
 
 
@@ -95,16 +89,10 @@ def write_custom_ruleset(
             onion_addr=onion_addr,
         )
     )
-    # Temporary workaround to allow abc.au to have two domains
-    # while we migrate from abc.au to abcau (see #219, #222).
-    if sd_rewrite_rule == "abc.au.securedrop.tor.onion":
-        slug = "abc-legacy"
-    else:
-        slug = directory_entry["slug"]
 
     RULESET_OUTPUT = "securedrop-ruleset.xml"
     with open(
-        os.path.join(RULESET_DIR, slug + "-" + RULESET_OUTPUT),
+        os.path.join(RULESET_DIR, directory_entry["slug"] + "-" + RULESET_OUTPUT),
         "w",
     ) as f:
         f.write(ruleset)
@@ -122,12 +110,7 @@ if __name__ == "__main__":
             # (per https://github.com/freedomofpress/securedrop-https-everywhere-ruleset/issues/219)
             if "." in row["sd_rewrite_rule"].removesuffix(".securedrop.tor.onion"):
                 logging.error(f"Subdomain not allowed in onion address: {row['sd_rewrite_rule']}")
-                if row["sd_rewrite_rule"] in SUBDOMAIN_EXEMPTIONS:
-                    logging.warning(
-                        f"Temporarily allowing exempted subdomain: {row['sd_rewrite_rule']}"
-                    )
-                else:
-                    sys.exit(1)
+                sys.exit(1)
             if row["primary_domain"] in EXEMPTIONS:
                 logging.warning(f"Skipping exempted domain: {row['primary_domain']}")
                 continue
