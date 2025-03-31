@@ -21,7 +21,6 @@ EXEMPTIONS = [
     "tcfmailvault.info",
     "espenandersen.no",
     "www.sfchronicle.com",
-    "propublica.org",
     "aftenbladet.no",
     "apps.publicintegrity.org",
     "www.ktipp.ch",
