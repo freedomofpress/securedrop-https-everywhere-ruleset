@@ -1,0 +1,5 @@
+<ruleset name="Howto SecureDrop">
+	<target host="howto.securedrop.tor.onion" />
+	<rule from="^http[s]?://howto.securedrop.tor.onion"
+    to="https://rud4meg7z32zseyvtkz45udln7v2rrbe65a6wel4c7hofqvfpj45paad.onion" />
+</ruleset>
