@@ -1,5 +1,0 @@
-<ruleset name="The Intercept">
-	<target host="theintercept.securedrop.tor.onion" />
-	<rule from="^http[s]?://theintercept.securedrop.tor.onion"
-    to="http://lhollo6vzrft3w77mgm67fhfv3fjadmf7oinmafa7tbmupc273oi7kid.onion" />
-</ruleset>
