@@ -27,7 +27,6 @@ EXEMPTIONS = [
     "www.abc.net.au",
     "img.huffingtonpost.com",
     "disclose.ngo",
-    "techcrunch.com",
     "webapps.aljazeera.net",
     "www.apache.be",
     "www.dr.dk",

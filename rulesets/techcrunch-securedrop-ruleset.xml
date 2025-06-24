@@ -1,5 +1,0 @@
-<ruleset name="TechCrunch">
-	<target host="techcrunch.securedrop.tor.onion" />
-	<rule from="^http[s]?://techcrunch.securedrop.tor.onion"
-    to="http://vplxle7awnyvvvduv6exnwrxbf4gzsh7lv7fxosnfl2ecidkttcbfcqd.onion" />
-</ruleset>
