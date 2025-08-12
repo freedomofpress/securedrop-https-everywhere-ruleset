@@ -6,12 +6,12 @@ DEFAULT_GOAL: help
 lint: check-ruff zizmor ## Run all linters
 
 .PHONY: check-ruff
-check-ruff: ## Check Python source code formatting with ruff
+check-ruff: ## Check Python source code for linting & formatting issues with ruff
 	@poetry run ruff check ./
 	@poetry run ruff format --check ./
 
 .PHONY: ruff
-ruff: ## Format Python source code with ruff
+ruff: ## Run Ruff code formatter and fix linting issues
 	@poetry run ruff check --fix ./
 	@poetry run ruff format ./
 
