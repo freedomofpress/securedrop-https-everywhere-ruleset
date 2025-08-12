@@ -13,9 +13,9 @@ requests = ">=2.31.0"
 pgpy = ">=0.6.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "*"
+ruff = "*"
 pytest = "^8.3.4"
 zizmor = "^1.0.0"
 
-[tool.black]
+[tool.ruff]
 line-length = 100

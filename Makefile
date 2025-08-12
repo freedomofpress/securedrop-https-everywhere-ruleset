@@ -3,15 +3,17 @@ image := fpf.local/securedrop-https-everywhere-ruleset:$(shell cat latest-rulese
 DEFAULT_GOAL: help
 
 .PHONY: lint
-lint: check-black zizmor ## Run all linters
+lint: check-ruff zizmor ## Run all linters
 
-.PHONY: check-black
-check-black: ## Check Python source code formatting with black
-	@poetry run black --check --diff ./
+.PHONY: check-ruff
+check-ruff: ## Check Python source code formatting with ruff
+	@poetry run ruff check ./
+	@poetry run ruff format --check ./
 
-.PHONY: black
-black: ## Format Python source code with black
-	@poetry run black ./
+.PHONY: ruff
+ruff: ## Format Python source code with ruff
+	@poetry run ruff check --fix ./
+	@poetry run ruff format ./
 
 .PHONY: zizmor
 zizmor: ## Lint GitHub Actions workflows
