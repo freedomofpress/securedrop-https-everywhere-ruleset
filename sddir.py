@@ -6,7 +6,6 @@ import requests
 import sys
 import textwrap
 import urllib
-from urllib.parse import urlparse
 from typing import Dict
 
 # Configure logging output
