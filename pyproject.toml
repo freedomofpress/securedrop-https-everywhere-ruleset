@@ -14,8 +14,8 @@ pgpy = ">=0.6.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
-pytest = "^8.3.4"
-zizmor = "^1.0.0"
+pytest = "^8.4.2"
+zizmor = "^1.13.0"
 
 [tool.ruff]
 line-length = 100
