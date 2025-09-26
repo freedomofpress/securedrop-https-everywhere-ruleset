@@ -32,3 +32,13 @@ jobs:
       - name: Run all linters
         run: |
             make lint
+
+  build:
+    name: Build
+    uses: freedomofpress/actionslib/.github/workflows/oci-build.yaml@main
+    permissions:
+      contents: read
+      actions: read
+    with:
+      context: "."
+      containerfile: docker/Dockerfile
