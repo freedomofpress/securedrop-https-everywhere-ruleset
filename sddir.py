@@ -30,6 +30,7 @@ EXEMPTIONS = [
     "www.apache.be",
     "www.dr.dk",
     "noyb.eu",
+    "www.cnn.com",
 ]
 
 

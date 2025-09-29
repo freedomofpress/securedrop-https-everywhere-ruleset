@@ -32,7 +32,6 @@ www.sueddeutsche.de,sueddeutsche.securedrop.tor.onion
 noyb.eu,noyb.securedrop.tor.onion
 news.bloomberglaw.com,bloombergindustrygroup.securedrop.tor.onion
 www.ktipp.ch,ktipp.securedrop.tor.onion
-taz.de,taz.securedrop.tor.onion
 disclose.ngo,disclose.securedrop.tor.onion
 www.dr.dk,dr.securedrop.tor.onion
 www.spiegel.de,spiegel.securedrop.tor.onion
