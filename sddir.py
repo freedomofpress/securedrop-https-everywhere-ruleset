@@ -31,6 +31,7 @@ EXEMPTIONS = [
     "www.dr.dk",
     "noyb.eu",
     "www.cnn.com",
+    "www.thestar.com",
 ]
 
 

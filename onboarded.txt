@@ -8,7 +8,6 @@ www.forbes.com,forbes.securedrop.tor.onion
 www.thestar.com,torontostar.securedrop.tor.onion
 tcfmailvault.info,bartongellman.securedrop.tor.onion
 www.apache.be,apache.securedrop.tor.onion
-www.2600.com,2600.securedrop.tor.onion
 www.washingtonpost.com,washingtonpost.securedrop.tor.onion,yes
 www.bloomberg.com,bloomberg.securedrop.tor.onion
 www.aftonbladet.se,aftonbladet.securedrop.tor.onion
@@ -26,7 +25,6 @@ news.bloomberglaw.com,bloomberglaw.securedrop.tor.onion
 www.cnn.com,cnn.securedrop.tor.onion
 propublica.org,propublica.securedrop.tor.onion
 www.cbc.ca,cbcrc.securedrop.tor.onion
-www.politico.com,politico.securedrop.tor.onion
 aftenbladet.no,aftenbladet.securedrop.tor.onion
 www.sueddeutsche.de,sueddeutsche.securedrop.tor.onion
 noyb.eu,noyb.securedrop.tor.onion
