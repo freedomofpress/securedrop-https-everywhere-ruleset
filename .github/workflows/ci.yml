@@ -10,7 +10,7 @@ on:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    container: debian:bookworm
+    container: debian:trixie
     steps:
       - uses: actions/checkout@v6
         with:
@@ -24,7 +24,7 @@ jobs:
           make verify
   lint:
     runs-on: ubuntu-latest
-    container: debian:bookworm
+    container: debian:trixie
     steps:
       - uses: actions/checkout@v6
         with:

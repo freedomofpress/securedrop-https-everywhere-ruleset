@@ -3,9 +3,10 @@ name = "securedrop-https-everywhere-ruleset"
 version = "0.0.0"
 description = "..."
 authors = ["SecureDrop Team <securedrop@freedom.press>"]
+package-mode = false
 
 [tool.poetry.dependencies]
-python = ">= 3.11"
+python = ">= 3.13"
 authlib = ">=1.1.0"
 certifi = "*"
 cryptography = ">=41.0.3"
