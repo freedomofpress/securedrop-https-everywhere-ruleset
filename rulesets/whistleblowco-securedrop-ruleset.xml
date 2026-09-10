@@ -1,0 +1,5 @@
+<ruleset name="Whistleblow.co">
+	<target host="whistleblowco.securedrop.tor.onion" />
+	<rule from="^http[s]?://whistleblowco.securedrop.tor.onion"
+    to="http://zuybtx2nop5cxfz4gyc7hzxpterf3pvf6zixe5cscajhlgqrexpkcoqd.onion" />
+</ruleset>
