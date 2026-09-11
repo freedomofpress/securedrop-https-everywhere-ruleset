@@ -15,7 +15,7 @@ pgpy = ">=0.6.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "*"
-pytest = "^8.3.4"
+pytest = ">=8.3.4,<10.0.0"
 zizmor = "^1.0.0"
 
 [tool.ruff]
